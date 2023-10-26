@@ -1,0 +1,49 @@
+@use "../abstracts/variables" as *;
+
+.h1,
+.h2,
+.h3,
+.h4 .sub_h1 {
+  font-family: $bellefair;
+}
+
+.sub_h2,
+.h5,
+.nav_link {
+  font-family: $barlow-condensed;
+}
+
+.h1 {
+  font-size: 150px;
+}
+
+.h2 {
+  font-size: 100px;
+}
+
+.h3 {
+  font-size: 56px;
+}
+
+.h4 {
+  font-size: 32px;
+}
+
+.h5 {
+  font-size: 28px;
+  letter-spacing: 4.75px;
+}
+
+.sub_h1 {
+  font-size: 28px;
+}
+
+.sub_h2 {
+  font-size: 14px;
+  letter-spacing: 2.35px;
+}
+
+.nav_link {
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
