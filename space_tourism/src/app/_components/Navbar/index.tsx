@@ -11,15 +11,18 @@ interface NavbarProps {
   data: INavlink[];
 }
 
-export const Navbar = (props: NavbarProps) => {
+export const Navbar = (props: NavbarProps): JSX.Element => {
   return (
     <div className="__navbar">
+      <hr />
       {props.data.map((el: INavlink) => {
         return (
-          <Link className="nav_link" key={el.index} href={el.to}>
-            <span>{el.index}</span>
-            <span>{el.link}</span>
-          </Link>
+          <>
+            <Link className="nav_link" key={el.index} href={el.to}>
+              <span>{el.index}</span>
+              <span>{el.link}</span>
+            </Link>
+          </>
         );
       })}
     </div>

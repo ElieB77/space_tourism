@@ -8,6 +8,18 @@
   align-items: center;
   gap: 50px;
   padding: 0 0 0 123px;
+  position: relative;
+
+  & hr {
+    position: absolute;
+    width: 473px;
+    height: 1px;
+    background-color: red !important;
+    color: red;
+    left: -450px;
+    border: none;
+    opacity: 0.2;
+  }
 
   & a {
     height: 96px;
