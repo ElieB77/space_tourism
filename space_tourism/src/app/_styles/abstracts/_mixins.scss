@@ -1,7 +1,13 @@
+@use "../abstracts/variables" as *;
+
 @mixin background_image($image) {
   background-image: url($image);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+}
+
+@mixin active {
+  border-bottom: solid 3px $light !important;
 }

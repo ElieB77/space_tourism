@@ -1,7 +1,9 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .__navbar {
-  background-color: black;
+  background-color: $dark-opacity;
+  backdrop-filter: blur(40.774227142333984px);
   width: 830px;
   height: 96px;
   display: flex;
@@ -35,4 +37,8 @@
   & span:first-of-type {
     margin-right: 12px;
   }
+}
+
+.__active {
+  @include active;
 }
