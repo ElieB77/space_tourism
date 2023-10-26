@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as *;
+
+.__navbar {
+  background-color: black;
+  width: 830px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0 0 0 123px;
+
+  & a {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 3px transparent;
+    transition: 0.3s ease;
+
+    &:hover {
+      border-bottom: solid 3px $light;
+    }
+  }
+
+  & span:first-of-type {
+    margin-right: 12px;
+  }
+}

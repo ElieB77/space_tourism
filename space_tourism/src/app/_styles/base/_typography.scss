@@ -46,4 +46,11 @@
 .nav_link {
   font-size: 16px;
   letter-spacing: 2.7px;
+  text-transform: uppercase;
+  color: $light;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
