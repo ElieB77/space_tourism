@@ -1,3 +1,5 @@
+import "@/app/_styles/pages/_destination.scss";
+
 export default function Destination() {
-  return <div>Destination</div>;
+  return <div className="__destination">Destination</div>;
 }

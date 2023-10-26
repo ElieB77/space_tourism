@@ -1,3 +1,5 @@
+@use "../abstracts//mixins" as *;
+
 .__home {
-  background-image: url("/images/home/background-home-desktop");
+  @include background-image("/images/home/background-home-desktop.jpg");
 }

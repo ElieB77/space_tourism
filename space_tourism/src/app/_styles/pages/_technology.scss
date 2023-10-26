@@ -1,0 +1,7 @@
+@use "../abstracts//mixins" as *;
+
+.__technology {
+  @include background-image(
+    "/images/technology/background-technology-desktop.jpg"
+  );
+}

@@ -1,0 +1,5 @@
+@use "../abstracts//mixins" as *;
+
+.__crew {
+  @include background-image("/images/crew/background-crew-desktop.jpg");
+}
