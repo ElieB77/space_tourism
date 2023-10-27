@@ -1,0 +1,45 @@
+@use "../abstracts/mixins" as *;
+@use "../base/typography" as *;
+@use "../abstracts/variables" as *;
+
+.__button {
+  @include center;
+  @extend .button;
+  @include responsive("medium") {
+    width: 242px;
+    height: 242px;
+  }
+  @include responsive("small") {
+    width: 150px;
+    height: 150px;
+  }
+  width: 274px;
+  height: 274px;
+  background-color: $light;
+  position: relative;
+  border-radius: 50%;
+  z-index: 1;
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: $light;
+    position: absolute;
+    opacity: 0.1;
+    transition: all 0.3s ease;
+  }
+  &:hover::after {
+    @include responsive("medium") {
+      width: 400px;
+      height: 400px;
+    }
+    @include responsive("small") {
+      width: 250px;
+      height: 250px;
+    }
+    width: 450px;
+    height: 450px;
+  }
+}

@@ -8,6 +8,12 @@
   height: 100%;
 }
 
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @mixin center_vertically {
   display: flex;
   align-items: center;
