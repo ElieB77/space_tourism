@@ -4,4 +4,14 @@
   @include background-image(
     "/images/technology/background-technology-desktop.jpg"
   );
+  @include responsive("medium") {
+    @include background-image(
+      "/images/technology/background-technology-tablet.jpg"
+    );
+  }
+  @include responsive("small") {
+    @include background-image(
+      "/images/technology/background-technology-mobile.jpg"
+    );
+  }
 }

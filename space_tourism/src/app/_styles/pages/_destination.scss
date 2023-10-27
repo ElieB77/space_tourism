@@ -4,4 +4,14 @@
   @include background-image(
     "/images/destination/background-destination-desktop.jpg"
   );
+  @include responsive("medium") {
+    @include background-image(
+      "/images/destination/background-destination-tablet.jpg"
+    );
+  }
+  @include responsive("small") {
+    @include background-image(
+      "/images/destination/background-destination-mobile.jpg"
+    );
+  }
 }

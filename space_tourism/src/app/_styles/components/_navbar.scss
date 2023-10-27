@@ -2,12 +2,11 @@
 @use "../abstracts/mixins" as *;
 
 .__navbar {
+  @include center_vertically;
   background-color: $dark-opacity;
   backdrop-filter: blur(40.774227142333984px);
   width: 830px;
   height: 96px;
-  display: flex;
-  align-items: center;
   gap: 50px;
   padding: 0 0 0 123px;
   position: relative;
@@ -23,9 +22,8 @@
   }
 
   & a {
+    @include center_vertically;
     height: 96px;
-    display: flex;
-    align-items: center;
     border-bottom: solid 3px transparent;
     transition: 0.3s ease;
 

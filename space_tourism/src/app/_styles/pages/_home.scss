@@ -1,5 +1,11 @@
-@use "../abstracts//mixins" as *;
+@use "../abstracts/mixins" as *;
 
 .__home {
   @include background-image("/images/home/background-home-desktop.jpg");
+  @include responsive("medium") {
+    @include background-image("/images/home/background-home-tablet.jpg");
+  }
+  @include responsive("small") {
+    @include background-image("/images/home/background-home-mobile.jpg");
+  }
 }

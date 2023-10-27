@@ -2,4 +2,10 @@
 
 .__crew {
   @include background-image("/images/crew/background-crew-desktop.jpg");
+  @include responsive("medium") {
+    @include background-image("/images/crew/background-crew-tablet.jpg");
+  }
+  @include responsive("small") {
+    @include background-image("/images/crew/background-crew-mobile.jpg");
+  }
 }
