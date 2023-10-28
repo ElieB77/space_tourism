@@ -1,5 +1,6 @@
 @use "../../base/typography" as *;
 @use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
 
 .__text_block {
   width: fit-content;
@@ -8,5 +9,8 @@
   }
   & p {
     width: 444px;
+  }
+  @include responsive("medium") {
+    text-align: center;
   }
 }

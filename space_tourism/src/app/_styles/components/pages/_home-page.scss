@@ -1,3 +1,5 @@
+@use "../../abstracts/mixins" as *;
+
 .__home_page {
   & h1 {
     margin: 20px 0;
@@ -5,5 +7,9 @@
 
   & a {
     align-self: flex-end;
+    @include responsive("medium") {
+      align-self: unset;
+      margin-top: 150px;
+    }
   }
 }

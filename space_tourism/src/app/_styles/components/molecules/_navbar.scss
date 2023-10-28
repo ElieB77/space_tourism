@@ -35,6 +35,18 @@
   & span:first-of-type {
     margin-right: 12px;
   }
+
+  @include responsive("medium") {
+    @include center_horizontally;
+    width: 450px;
+    padding-inline: 0;
+    gap: 30px;
+
+    & hr,
+    & span:first-of-type {
+      display: none;
+    }
+  }
 }
 
 .__active {

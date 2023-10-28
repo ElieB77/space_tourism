@@ -19,6 +19,11 @@
   align-items: center;
 }
 
+@mixin center_horizontally {
+  display: flex;
+  justify-content: center;
+}
+
 @mixin active {
   border-bottom: solid 3px $light !important;
 }
