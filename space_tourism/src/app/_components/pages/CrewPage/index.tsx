@@ -1,3 +1,3 @@
 export const CrewPage = () => {
-  return <div>CrewPage</div>;
+  return <div></div>;
 };

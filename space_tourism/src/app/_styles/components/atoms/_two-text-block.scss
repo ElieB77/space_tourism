@@ -1,0 +1,13 @@
+@use "../../base/typography" as *;
+
+.__two_text_block {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  & h2 {
+    @extend .sub_h2;
+  }
+  & p {
+    @extend .sub_h1;
+  }
+}
