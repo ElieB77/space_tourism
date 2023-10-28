@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as *;
+
+.__title {
+  font-family: $barlow-condensed;
+  letter-spacing: 4.72px;
+
+  & span {
+    margin-right: 26px;
+    color: $dark;
+    opacity: 0.25;
+  }
+}
