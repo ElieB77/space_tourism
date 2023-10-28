@@ -16,9 +16,22 @@ h5,
 }
 
 h4,
+h2,
 .button,
-.nav_link {
+.nav_link,
+.sub_h1,
+h1 {
   text-transform: uppercase;
+}
+
+h4,
+.button {
+  font-size: 32px;
+}
+
+h4,
+p {
+  color: $bright;
 }
 
 h1 {
@@ -33,9 +46,8 @@ h3 {
   font-size: 56px;
 }
 
-h4,
-.button {
-  font-size: 32px;
+h4 {
+  letter-spacing: 4.7px;
 }
 
 h5 {
