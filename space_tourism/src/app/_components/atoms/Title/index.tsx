@@ -1,4 +1,4 @@
-import "@/app/_styles/components/_title.scss";
+import "@/app/_styles/components/atoms/_title.scss";
 
 interface TitleProps {
   content: string;

@@ -1,5 +1,5 @@
 "use client";
-import "@/app/_styles/components/_navbar.scss";
+import "@/app/_styles/components/molecules/_navbar.scss";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

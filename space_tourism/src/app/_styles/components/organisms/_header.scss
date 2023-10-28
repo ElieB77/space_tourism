@@ -1,4 +1,4 @@
-@use "../abstracts/mixins" as *;
+@use "../../abstracts/mixins" as *;
 
 .__header {
   @include center_vertically;

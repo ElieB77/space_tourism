@@ -1,5 +1,5 @@
 import Link from "next/link";
-import "@/app/_styles/components/_button.scss";
+import "@/app/_styles/components/atoms/_button.scss";
 
 interface ButtonProps {
   content: string;

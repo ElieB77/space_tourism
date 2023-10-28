@@ -1,0 +1,10 @@
+.__container > div:first-of-type {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 130px;
+}

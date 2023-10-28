@@ -1,4 +1,4 @@
-import "@/app/_styles/components/_header.scss";
+import "@/app/_styles/components/organisms/_header.scss";
 import Image from "next/image";
 import Link from "next/link";
 

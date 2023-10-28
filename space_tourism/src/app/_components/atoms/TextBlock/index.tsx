@@ -1,9 +1,9 @@
-import "@/app/_styles/components/_text-block.scss";
+import "@/app/_styles/components/atoms/_text-block.scss";
 
 interface TextBlockProps {
-  firstLine?: any;
-  secondLine?: any;
-  thirdLine?: any;
+  firstLine?: JSX.Element;
+  secondLine?: JSX.Element;
+  thirdLine?: JSX.Element;
 }
 
 export const TextBlock = (props: TextBlockProps) => {
