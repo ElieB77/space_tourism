@@ -4,7 +4,6 @@
 .__text_block {
   width: fit-content;
   & h4 {
-    @extend .sub_h1;
     font-family: $barlow-condensed;
   }
   & p {
