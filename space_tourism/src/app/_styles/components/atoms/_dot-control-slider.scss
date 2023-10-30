@@ -1,0 +1,19 @@
+@use "../../abstracts/variables" as *;
+
+.__dot_control_slider {
+  background-color: $light;
+  opacity: 0.3;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}

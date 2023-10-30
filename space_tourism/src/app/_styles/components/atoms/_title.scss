@@ -3,10 +3,12 @@
 .__title {
   font-family: $barlow-condensed;
   letter-spacing: 4.72px;
+  position: absolute;
+  top: 0;
 
   & span {
     margin-right: 26px;
-    color: $dark;
+    color: $light;
     opacity: 0.25;
   }
 }

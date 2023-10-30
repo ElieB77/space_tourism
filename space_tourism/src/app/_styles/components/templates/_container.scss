@@ -1,17 +1,13 @@
 @use "../../abstracts/mixins" as *;
 
-.__container > div:first-of-type {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
+.__container {
+  height: 750px;
   width: 80%;
   position: absolute;
   left: 50%;
+  bottom: 0;
   transform: translate(-50%);
-  bottom: 130px;
-
-  @include responsive("medium") {
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

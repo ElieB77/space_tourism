@@ -1,0 +1,32 @@
+@use "../../abstracts/variables" as *;
+
+.__tab_slider_layout {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 120px;
+
+  & h2 {
+    margin: 30px 0 14px 0;
+  }
+
+  & hr {
+    margin: 50px 0 20px 0;
+    border: none;
+    background-color: $bright !important;
+    height: 1px;
+  }
+
+  & img {
+    animation: rotate 100s linear infinite;
+    align-self: flex-end;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

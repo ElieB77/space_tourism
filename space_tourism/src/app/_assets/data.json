@@ -43,7 +43,9 @@
       "distance": "384,400 km",
       "travel": "3 days",
       "avg-distance": "avg. distance",
-      "est-travel": "est. travel time"
+      "est-travel": "est. travel time",
+      "index": "01",
+      "title": "Pick your destination"
     },
     {
       "name": "Mars",
@@ -70,6 +72,7 @@
     },
     {
       "name": "Titan",
+      "id": 4,
       "images": {
         "png": "/images/destination/image-titan.png",
         "webp": "/images/destination/image-titan.webp"
@@ -83,6 +86,8 @@
     {
       "name": "Douglas Hurley",
       "id": 1,
+      "index": "02",
+      "title": "Meet your crew",
 
       "images": {
         "png": "/images/crew/image-douglas-hurley.png",
@@ -100,7 +105,7 @@
         "png": "/images/crew/image-mark-shuttleworth.png",
         "webp": "/images/crew/image-mark-shuttleworth.webp",
         "width": 453,
-        "height": 654
+        "height": 700
       },
       "role": "Mission Specialist",
       "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
@@ -119,6 +124,7 @@
     },
     {
       "name": "Anousheh Ansari",
+      "id": 4,
       "images": {
         "png": "/images/crew/image-anousheh-ansari.png",
         "webp": "/images/crew/image-anousheh-ansari.webp",
