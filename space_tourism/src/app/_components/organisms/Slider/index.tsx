@@ -3,6 +3,7 @@ import "@/app/_styles/components/organisms/_slider.scss";
 
 import { TabSliderLayout } from "../../templates/TabSliderLayout";
 import { DotSliderLayout } from "../../templates/DotSliderLayout";
+import { ButtonSliderLayout } from "../../templates/ButtonSliderLayout";
 
 interface SliderProps {
   variant: "destinations" | "crew" | "technology";
@@ -19,6 +20,10 @@ export const Slider = (props: SliderProps) => {
 
         {props.variant === "crew" && (
           <DotSliderLayout data={props.data[props.variant]} />
+        )}
+
+        {props.variant === "technology" && (
+          <ButtonSliderLayout data={props.data[props.variant]} />
         )}
       </div>
     </div>

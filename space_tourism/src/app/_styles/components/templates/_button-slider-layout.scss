@@ -1,0 +1,19 @@
+.__button_slider_layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+
+  & h3 {
+    margin: 10px 0 15px 0;
+  }
+
+  & p {
+    width: 475px;
+  }
+
+  > div:first-of-type {
+    display: flex;
+    gap: 80px;
+  }
+}

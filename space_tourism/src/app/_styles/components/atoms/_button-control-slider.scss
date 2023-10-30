@@ -1,0 +1,19 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+
+.__button_control_slider {
+  @include center;
+  background-color: $light;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  & h4 {
+    color: $dark;
+  }
+}
