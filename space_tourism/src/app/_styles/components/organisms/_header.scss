@@ -16,4 +16,11 @@
   @include responsive("medium") {
     padding-top: unset;
   }
+  @include responsive("small") {
+    padding: 24px 24px 0 24px;
+
+    & img {
+      margin-left: 0;
+    }
+  }
 }

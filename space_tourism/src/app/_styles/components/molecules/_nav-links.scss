@@ -1,0 +1,33 @@
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/variables" as *;
+
+.__nav_links {
+  display: flex;
+  gap: 50px;
+
+  & a {
+    @include center_vertically;
+    height: 96px;
+    border-bottom: solid 3px transparent;
+    transition: 0.3s ease;
+
+    &:hover {
+      border-bottom: solid 3px $light;
+    }
+  }
+
+  & span:first-of-type {
+    margin-right: 12px;
+  }
+
+  @include responsive("small") {
+    flex-direction: column;
+    height: 0;
+    gap: 30px;
+    width: fit-content;
+  }
+}
+
+.__active {
+  @include active-border;
+}

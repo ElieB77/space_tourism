@@ -2,7 +2,7 @@
 
 .__dot_control_slider {
   background-color: $light;
-  opacity: 0.3;
+  opacity: 0.4;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -16,4 +16,8 @@
   &:not(:last-child) {
     margin-right: 25px;
   }
+}
+
+.active_dot {
+  opacity: 1;
 }

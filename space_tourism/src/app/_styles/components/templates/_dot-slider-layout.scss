@@ -1,3 +1,5 @@
+@use "../../abstracts/mixins" as *;
+
 .__dot_slider_layout {
   display: flex;
   justify-content: space-between;
@@ -17,6 +19,46 @@
     }
   }
 
-  & img {
+  @include responsive("medium") {
+    flex-direction: column;
+    align-items: center;
+
+    > div {
+      align-self: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    & img {
+      width: 400px;
+      height: 400px;
+    }
+
+    & p {
+      width: 100% !important;
+      margin-bottom: 16px !important;
+    }
+  }
+
+  @include responsive("large") {
+    & img {
+      width: 400px;
+      height: 400px;
+    }
+
+    & p {
+      width: 444px !important;
+    }
+  }
+
+  @include responsive("small") {
+    & img {
+      width: 200px;
+      height: 200px;
+    }
+
+    & p {
+      width: unset !important;
+    }
   }
 }

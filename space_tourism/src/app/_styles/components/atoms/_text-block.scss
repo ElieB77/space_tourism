@@ -13,4 +13,9 @@
   @include responsive("medium") {
     text-align: center;
   }
+  @include responsive("small") {
+    & p {
+      width: 300px !important;
+    }
+  }
 }

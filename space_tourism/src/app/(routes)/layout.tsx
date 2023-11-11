@@ -2,6 +2,7 @@ import "@/app/_styles/main.scss";
 import { Navbar } from "../_components/molecules/Navbar";
 import data from "@/app/_assets/data.json";
 import { Header } from "../_components/organisms/Header";
+import { MobileNavbar } from "../_components/molecules/MobileNavbar";
 
 export default function RootLayout({
   children,

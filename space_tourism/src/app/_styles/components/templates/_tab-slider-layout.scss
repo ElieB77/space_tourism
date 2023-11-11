@@ -1,4 +1,5 @@
 @use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
 
 .__tab_slider_layout {
   display: flex;
@@ -20,6 +21,49 @@
   & img {
     animation: rotate 100s linear infinite;
     align-self: flex-end;
+  }
+
+  @include responsive("medium") {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & div:nth-of-type(2) p {
+      width: 400px;
+    }
+
+    & img {
+      width: 200px !important;
+      height: 200px !important;
+      align-self: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  @include responsive("large") {
+    & img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  @include responsive("small") {
+    & img {
+      width: 170px !important;
+      height: 170px !important;
+    }
+
+    & hr {
+      margin: 0;
+      margin-top: 20px;
+    }
   }
 }
 

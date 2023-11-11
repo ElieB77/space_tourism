@@ -1,3 +1,5 @@
+@use "../../abstracts/mixins" as *;
+
 .__button_slider_layout {
   display: flex;
   align-items: center;
@@ -10,10 +12,59 @@
 
   & p {
     width: 475px;
+
+    &:first-of-type {
+      text-transform: uppercase;
+    }
   }
 
   > div:first-of-type {
     display: flex;
     gap: 80px;
+  }
+
+  @include responsive("medium") {
+    flex-direction: column;
+    align-items: center;
+
+    > div:first-of-type {
+      order: 2;
+      flex-direction: column;
+      gap: 0;
+
+      & div:first-of-type {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+      }
+    }
+
+    & p {
+      width: 444px;
+    }
+
+    & img {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 50px;
+    }
+  }
+
+  @include responsive("large") {
+    & img {
+      width: 200px;
+      height: 200px;
+    }
+
+    > div:first-of-type {
+      gap: 5px;
+    }
+  }
+
+  @include responsive("small") {
+    padding-bottom: 0;
+    & p {
+      width: unset !important;
+    }
   }
 }

@@ -19,3 +19,8 @@
     color: $light;
   }
 }
+
+.active_tab {
+  @include active-border;
+  color: $light;
+}

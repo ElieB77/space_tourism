@@ -10,8 +10,9 @@ $bellefair: "Bellefair";
 $barlow: "Barlow";
 $barlow-condensed: "Barlow Condensed";
 ///////////////////////
-$mobile: 375px;
+$mobile: 500px;
 $tablet: 768px;
+$desktop: 1500px;
 
 $breakpoints: (
   "small": (
@@ -19,5 +20,8 @@ $breakpoints: (
   ),
   "medium": (
     max-width: $tablet,
+  ),
+  "large": (
+    max-width: $desktop,
   ),
 );

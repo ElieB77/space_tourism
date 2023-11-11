@@ -3,17 +3,36 @@
 
 .__button_control_slider {
   @include center;
-  background-color: $light;
+  background: transparent;
   border-radius: 50%;
   width: 80px;
   height: 80px;
   cursor: pointer;
+  border: solid 1px $dark-secondary;
+
+  &:hover {
+    border-color: $light;
+  }
 
   &:not(:last-child) {
     margin-bottom: 30px;
   }
 
   & h4 {
+    color: $light;
+  }
+
+  @include responsive("medium") {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.active_button {
+  background-color: $light;
+  color: $dark;
+  border: none;
+  > h4 {
     color: $dark;
   }
 }

@@ -21,15 +21,18 @@ export const TabSliderLayout = (props: TabSliderLayoutProps) => {
         height={445}
       />
       <div>
-        {props.data.map((tab: any, index: number) => {
-          return (
-            <TabControlSlider
-              key={tab.id}
-              tab={tab.name}
-              handleClick={() => handleSliderIndex(index)}
-            />
-          );
-        })}
+        <div>
+          {props.data.map((tab: any, index: number) => {
+            return (
+              <TabControlSlider
+                key={tab.id}
+                tab={tab.name}
+                active={index === sliderIndex}
+                handleClick={() => handleSliderIndex(index)}
+              />
+            );
+          })}
+        </div>
 
         <TextBlock
           firstLine={<h2>{props.data[sliderIndex].name}</h2>}

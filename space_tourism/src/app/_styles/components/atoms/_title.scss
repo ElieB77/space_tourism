@@ -1,4 +1,5 @@
 @use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
 
 .__title {
   font-family: $barlow-condensed;
@@ -11,5 +12,9 @@
     margin-right: 26px;
     color: $light;
     opacity: 0.25;
+  }
+
+  @include responsive("small") {
+    margin-top: 100px;
   }
 }

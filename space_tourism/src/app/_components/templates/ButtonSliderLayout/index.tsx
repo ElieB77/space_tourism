@@ -21,6 +21,7 @@ export const ButtonSliderLayout = (props: ButtontSliderLayoutProps) => {
                 key={btn.id}
                 handleClick={() => handleSliderIndex(index)}
                 content={btn.id}
+                active={index === sliderIndex}
               />
             );
           })}

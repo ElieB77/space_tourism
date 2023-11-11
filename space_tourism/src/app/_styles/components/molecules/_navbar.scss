@@ -7,7 +7,6 @@
   backdrop-filter: blur(40.774227142333984px);
   width: 830px;
   height: 96px;
-  gap: 50px;
   padding: 0 0 0 123px;
   position: relative;
 
@@ -21,21 +20,6 @@
     opacity: 0.2;
   }
 
-  & a {
-    @include center_vertically;
-    height: 96px;
-    border-bottom: solid 3px transparent;
-    transition: 0.3s ease;
-
-    &:hover {
-      border-bottom: solid 3px $light;
-    }
-  }
-
-  & span:first-of-type {
-    margin-right: 12px;
-  }
-
   @include responsive("medium") {
     @include center_horizontally;
     width: 450px;
@@ -47,8 +31,8 @@
       display: none;
     }
   }
-}
 
-.__active {
-  @include active-border;
+  @include responsive("small") {
+    display: none;
+  }
 }

@@ -26,6 +26,7 @@ export const DotSliderLayout = (props: DotSliderLayoutProps) => {
             <DotControlSlider
               key={dot.id}
               handleClick={() => handleSliderIndex(index)}
+              active={index === sliderIndex}
             />
           );
         })}
