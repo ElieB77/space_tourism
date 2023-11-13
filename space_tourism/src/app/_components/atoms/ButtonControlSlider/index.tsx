@@ -1,8 +1,8 @@
 import "@/app/_styles/components/atoms/_button-control-slider.scss";
 
 interface ButtonControlSliderProps {
-  content: string;
-  handleClick: any;
+  content: string | number;
+  handleClick: () => void;
   active: boolean;
 }
 

@@ -2,11 +2,12 @@ import { TabControlSlider } from "../../atoms/TabControlSlider";
 import { TextBlock } from "../../atoms/TextBlock";
 import { TwoTextBlock } from "../../atoms/TwoTextBlock";
 import { useSliderIndex } from "@/app/_hooks/useSliderIndex";
-import Image from "next/image";
 import "@/app/_styles/components/templates/_tab-slider-layout.scss";
+import { SliderImage } from "../../atoms/SliderImage";
+import { TabSliderLayoutType } from "@/app/types";
 
 interface TabSliderLayoutProps {
-  data: any;
+  data: TabSliderLayoutType[];
 }
 
 export const TabSliderLayout = (props: TabSliderLayoutProps) => {
@@ -14,15 +15,15 @@ export const TabSliderLayout = (props: TabSliderLayoutProps) => {
 
   return (
     <div className="__tab_slider_layout">
-      <Image
-        src={props.data[sliderIndex].images.webp}
-        alt={"Planet"}
+      <SliderImage
+        id={sliderIndex}
+        source={props.data[sliderIndex].images.webp}
         width={445}
         height={445}
       />
       <div>
         <div>
-          {props.data.map((tab: any, index: number) => {
+          {props.data.map((tab: TabSliderLayoutType, index: number) => {
             return (
               <TabControlSlider
                 key={tab.id}
@@ -37,11 +38,12 @@ export const TabSliderLayout = (props: TabSliderLayoutProps) => {
         <TextBlock
           firstLine={<h2>{props.data[sliderIndex].name}</h2>}
           secondLine={<p>{props.data[sliderIndex].description}</p>}
+          id={sliderIndex}
         />
         <hr />
         <TwoTextBlock
-          firstHeader={<h2>{props.data[0]["avg-distance"]}</h2>}
-          secondHeader={<h2>{props.data[0]["est-travel"]}</h2>}
+          firstHeader={<h2>{props.data[0]["avgDistance"]}</h2>}
+          secondHeader={<h2>{props.data[0]["estTravel"]}</h2>}
           firstContent={<h5>{props.data[sliderIndex].distance}</h5>}
           secondContent={<h5>{props.data[sliderIndex].travel}</h5>}
         />

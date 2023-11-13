@@ -1,7 +1,7 @@
 import "@/app/_styles/components/atoms/_dot-control-slider.scss";
 
 interface DotControlSliderProps {
-  handleClick: any;
+  handleClick: () => void;
   active: boolean;
 }
 

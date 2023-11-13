@@ -16,14 +16,4 @@ export const CrewPage = () => {
 };
 
 {
-  /* <TextBlock
-          firstLine={<h2>{data.destinations[sliderIndex].name}</h2>}
-          secondLine={<p>{data.destinations[sliderIndex].description}</p>}
-        />
-        <TwoTextBlock
-          firstHeader={<h2>{data.destinations[0]["avg-distance"]}</h2>}
-          secondHeader={<h2>{data.destinations[0]["est-travel"]}</h2>}
-          firstContent={<h5>{data.destinations[sliderIndex].distance}</h5>}
-          secondContent={<h5>{data.destinations[sliderIndex].travel}</h5>}
-        /> */
 }

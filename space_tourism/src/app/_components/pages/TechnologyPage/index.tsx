@@ -1,4 +1,3 @@
-import { ButtonControlSlider } from "../../atoms/ButtonControlSlider";
 import data from "@/app/_assets/data.json";
 import { Container } from "../../templates/Container";
 import { Slider } from "../../organisms/Slider";

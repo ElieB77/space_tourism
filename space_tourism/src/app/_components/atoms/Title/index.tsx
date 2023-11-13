@@ -1,8 +1,8 @@
 import "@/app/_styles/components/atoms/_title.scss";
 
 interface TitleProps {
-  content: any;
-  index: any;
+  content?: string;
+  index?: string;
 }
 
 export const Title = (props: TitleProps) => {

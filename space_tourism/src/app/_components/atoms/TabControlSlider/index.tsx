@@ -1,13 +1,12 @@
 import "@/app/_styles/components/atoms/_tabs-control-slider.scss";
 
 interface TabControlSliderProps {
-  tab: any;
-  handleClick: any;
+  tab: string;
+  handleClick: () => void;
   active: boolean;
 }
 
 export const TabControlSlider = (props: TabControlSliderProps) => {
-  console.log(props.active);
   return (
     <p
       onClick={props.handleClick}

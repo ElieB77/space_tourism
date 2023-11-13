@@ -1,15 +1,21 @@
 import "@/app/_styles/components/molecules/_mobile-navbar.scss";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLinks } from "../NavLinks";
+import { MenuItem } from "@/app/types";
 
 interface MobileNavbarProps {
-  data: any;
+  data: MenuItem[];
 }
 
 export const MobileNavbar = (props: MobileNavbarProps): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <div className="__mobile_navbar">

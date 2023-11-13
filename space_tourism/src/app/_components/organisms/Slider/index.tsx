@@ -1,5 +1,4 @@
 "use client";
-import "@/app/_styles/components/organisms/_slider.scss";
 
 import { TabSliderLayout } from "../../templates/TabSliderLayout";
 import { DotSliderLayout } from "../../templates/DotSliderLayout";
@@ -7,7 +6,7 @@ import { ButtonSliderLayout } from "../../templates/ButtonSliderLayout";
 
 interface SliderProps {
   variant: "destinations" | "crew" | "technology";
-  data: any;
+  data: Record<string, any>;
 }
 
 export const Slider = (props: SliderProps) => {

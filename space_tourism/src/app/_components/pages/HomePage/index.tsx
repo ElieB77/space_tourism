@@ -1,3 +1,4 @@
+"use client";
 import { TextBlock } from "../../atoms/TextBlock";
 import data from "@/app/_assets/data.json";
 import "@/app/_styles/components/pages/_home-page.scss";

@@ -1,16 +1,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "@/app/_styles/components/molecules/_nav-links.scss";
-
-export interface INavlink {
-  index: string;
-  link: string;
-  to: string;
-  id: number;
-}
+import { MenuItem } from "@/app/types";
 
 interface NavLinksProps {
-  data: any;
+  data: MenuItem[];
 }
 
 export const NavLinks = (props: NavLinksProps): JSX.Element => {
@@ -18,18 +12,16 @@ export const NavLinks = (props: NavLinksProps): JSX.Element => {
 
   return (
     <div className="__nav_links">
-      {props.data.map((link: INavlink) => {
+      {props.data.map((link: MenuItem) => {
         return (
-          <>
-            <Link
-              className={`nav_link ${pathname === link.to ? "__active" : ""}`}
-              key={link.id}
-              href={link.to}
-            >
-              <span>{link.index}</span>
-              <span>{link.link}</span>
-            </Link>
-          </>
+          <Link
+            className={`nav_link ${pathname === link.to ? "__active" : ""}`}
+            key={link.id}
+            href={link.to}
+          >
+            <span>{link.index}</span>
+            <span>{link.link}</span>
+          </Link>
         );
       })}
     </div>
